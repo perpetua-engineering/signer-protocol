@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A481ACE9949817902CABDCF /* CBOREncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727706FBCB6618B3D7D8B58A /* CBOREncoder.swift */; };
+		2EEB615F0186FEE2324F9673 /* CSPEnvelope.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51D6C473464957D026BABAB /* CSPEnvelope.swift */; };
+		3C972ECFC3FFB6EFE71657B2 /* CSPCanonicalJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEDED9D36ACAEDD198AAFC7 /* CSPCanonicalJSON.swift */; };
+		44188824469246C0A0ADBC71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7224418963AD75951288EA8D /* Foundation.framework */; };
+		5CD1180DB4FF085EF150A9FC /* CSPIntegratorSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E624B9C980B5A0D126038AE /* CSPIntegratorSession.swift */; };
+		9FC234D35F0BA0A873C65111 /* CSPCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE522776CD1ACD61AF0F1F1 /* CSPCrypto.swift */; };
+		A56118C8920FAB0946374765 /* SignerDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A39C665CE13BD5040B520A /* SignerDemoApp.swift */; };
+		D7831E21FA1D94F4A3A7B5EA /* DemoWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B661E04FDA00BE83964057CC /* DemoWalletView.swift */; };
+		E2110B93FF788D64A3E30275 /* DemoWalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58B9DFB0F7918FCD4EEE6B3 /* DemoWalletModel.swift */; };
+		F69D5C3CCDFC5788A9110215 /* CSPModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C31FD33DFA133D27975E261 /* CSPModels.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E624B9C980B5A0D126038AE /* CSPIntegratorSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSPIntegratorSession.swift; path = ../../Shared/SignerProtocol/CSPIntegratorSession.swift; sourceTree = "<group>"; };
+		1DEDED9D36ACAEDD198AAFC7 /* CSPCanonicalJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSPCanonicalJSON.swift; path = ../../Shared/SignerProtocol/CSPCanonicalJSON.swift; sourceTree = "<group>"; };
+		2C31FD33DFA133D27975E261 /* CSPModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSPModels.swift; path = ../../Shared/SignerProtocol/CSPModels.swift; sourceTree = "<group>"; };
+		3CE522776CD1ACD61AF0F1F1 /* CSPCrypto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSPCrypto.swift; path = ../../Shared/SignerProtocol/CSPCrypto.swift; sourceTree = "<group>"; };
+		7224418963AD75951288EA8D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		727706FBCB6618B3D7D8B58A /* CBOREncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBOREncoder.swift; path = ../../Shared/Crypto/CBOREncoder.swift; sourceTree = "<group>"; };
+		81A39C665CE13BD5040B520A /* SignerDemoApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignerDemoApp.swift; sourceTree = "<group>"; };
+		A58B9DFB0F7918FCD4EEE6B3 /* DemoWalletModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DemoWalletModel.swift; sourceTree = "<group>"; };
+		B661E04FDA00BE83964057CC /* DemoWalletView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DemoWalletView.swift; sourceTree = "<group>"; };
+		CA584B52A592B0F6D6F378B5 /* SignerDemoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignerDemoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F51D6C473464957D026BABAB /* CSPEnvelope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSPEnvelope.swift; path = ../../Shared/SignerProtocol/CSPEnvelope.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		127FEB846E01944165ED6896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44188824469246C0A0ADBC71 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38F74C4CA8F5BB57F9E260FD /* SharedProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				1DEDED9D36ACAEDD198AAFC7 /* CSPCanonicalJSON.swift */,
+				3CE522776CD1ACD61AF0F1F1 /* CSPCrypto.swift */,
+				F51D6C473464957D026BABAB /* CSPEnvelope.swift */,
+				2C31FD33DFA133D27975E261 /* CSPModels.swift */,
+				0E624B9C980B5A0D126038AE /* CSPIntegratorSession.swift */,
+				727706FBCB6618B3D7D8B58A /* CBOREncoder.swift */,
+			);
+			name = SharedProtocol;
+			sourceTree = "<group>";
+		};
+		4B3DB88A7137127493369C16 = {
+			isa = PBXGroup;
+			children = (
+				758AC0DA801F4810E370BA8E /* Products */,
+				D5CF0700FFE654E2A5375B37 /* Frameworks */,
+				B098F2D52A9F27C80516A1F5 /* SignerDemoWallet */,
+				38F74C4CA8F5BB57F9E260FD /* SharedProtocol */,
+			);
+			sourceTree = "<group>";
+		};
+		758AC0DA801F4810E370BA8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA584B52A592B0F6D6F378B5 /* SignerDemoWallet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B098F2D52A9F27C80516A1F5 /* SignerDemoWallet */ = {
+			isa = PBXGroup;
+			children = (
+				81A39C665CE13BD5040B520A /* SignerDemoApp.swift */,
+				A58B9DFB0F7918FCD4EEE6B3 /* DemoWalletModel.swift */,
+				B661E04FDA00BE83964057CC /* DemoWalletView.swift */,
+			);
+			name = SignerDemoWallet;
+			path = SignerDemoWallet;
+			sourceTree = "<group>";
+		};
+		D5CF0700FFE654E2A5375B37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6E44F88695D6F0CD936CFA8 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6E44F88695D6F0CD936CFA8 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7224418963AD75951288EA8D /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A47E59322A32337B017744A /* SignerDemoWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4365F68EE90A354C1B4A9F24 /* Build configuration list for PBXNativeTarget "SignerDemoWallet" */;
+			buildPhases = (
+				D333E2D29FE03E68136DB962 /* Sources */,
+				127FEB846E01944165ED6896 /* Frameworks */,
+				FB63E4B26E6365B12EE97667 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SignerDemoWallet;
+			productName = SignerDemoWallet;
+			productReference = CA584B52A592B0F6D6F378B5 /* SignerDemoWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31B9FEEF98A9B65FCE60FE5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = A38FCF5770F27E7D3B33A6C1 /* Build configuration list for PBXProject "SignerDemoWallet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B3DB88A7137127493369C16;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 758AC0DA801F4810E370BA8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A47E59322A32337B017744A /* SignerDemoWallet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB63E4B26E6365B12EE97667 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D333E2D29FE03E68136DB962 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A56118C8920FAB0946374765 /* SignerDemoApp.swift in Sources */,
+				E2110B93FF788D64A3E30275 /* DemoWalletModel.swift in Sources */,
+				D7831E21FA1D94F4A3A7B5EA /* DemoWalletView.swift in Sources */,
+				3C972ECFC3FFB6EFE71657B2 /* CSPCanonicalJSON.swift in Sources */,
+				9FC234D35F0BA0A873C65111 /* CSPCrypto.swift in Sources */,
+				2EEB615F0186FEE2324F9673 /* CSPEnvelope.swift in Sources */,
+				F69D5C3CCDFC5788A9110215 /* CSPModels.swift in Sources */,
+				5CD1180DB4FF085EF150A9FC /* CSPIntegratorSession.swift in Sources */,
+				1A481ACE9949817902CABDCF /* CBOREncoder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		19AD9AF220FAEE5097FBA572 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A304510880D64FDD7319A8EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = SignerDemoWallet/SignerDemoWallet.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D282R2L62J;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SignerDemoWallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = watch.perpetua.signerdemo;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0B8514E26E2A51839B41BA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_ENTITLEMENTS = SignerDemoWallet/SignerDemoWallet.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D282R2L62J;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SignerDemoWallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = watch.perpetua.signerdemo;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C1402FEBAF10C05CA3B0E35C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4365F68EE90A354C1B4A9F24 /* Build configuration list for PBXNativeTarget "SignerDemoWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A304510880D64FDD7319A8EF /* Release */,
+				B0B8514E26E2A51839B41BA1 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A38FCF5770F27E7D3B33A6C1 /* Build configuration list for PBXProject "SignerDemoWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19AD9AF220FAEE5097FBA572 /* Debug */,
+				C1402FEBAF10C05CA3B0E35C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31B9FEEF98A9B65FCE60FE5E /* Project object */;
+}

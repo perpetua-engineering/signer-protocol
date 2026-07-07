@@ -1,0 +1,131 @@
+{
+  "suite": "CSP1",
+  "generated_by": "@perpetua/signer-protocol",
+  "jcs": [
+    {
+      "value": {
+        "b": 2,
+        "a": 1,
+        "aa": 3,
+        "A": 0
+      },
+      "canonical": "{\"A\":0,\"a\":1,\"aa\":3,\"b\":2}"
+    },
+    {
+      "value": {
+        "z": [
+          true,
+          false,
+          "x"
+        ],
+        "a": {
+          "k": 7
+        }
+      },
+      "canonical": "{\"a\":{\"k\":7},\"z\":[true,false,\"x\"]}"
+    },
+    {
+      "value": {
+        "s": "esc \"quote\" \\ tab\t nl\n μ→"
+      },
+      "canonical": "{\"s\":\"esc \\\"quote\\\" \\\\ tab\\t nl\\n μ→\"}"
+    },
+    {
+      "value": {
+        "neg": -42,
+        "big": 9007199254740991
+      },
+      "canonical": "{\"big\":9007199254740991,\"neg\":-42}"
+    },
+    {
+      "value": {
+        "nested": {
+          "deep": [
+            {
+              "x": "y"
+            },
+            [
+              1,
+              2,
+              3
+            ]
+          ]
+        }
+      },
+      "canonical": "{\"nested\":{\"deep\":[{\"x\":\"y\"},[1,2,3]]}}"
+    }
+  ],
+  "signing": [
+    {
+      "type": "accounts_request",
+      "destination_host": "cryptograph.watch",
+      "envelope": {
+        "pairing_id": "6BE2A38E-1111-4222-8333-444455556666",
+        "ctr": 2,
+        "iat": 1782300000,
+        "exp": 1782300300,
+        "v": 1,
+        "type": "accounts_request"
+      },
+      "canonical": "{\"ctr\":2,\"exp\":1782300300,\"iat\":1782300000,\"pairing_id\":\"6BE2A38E-1111-4222-8333-444455556666\",\"type\":\"accounts_request\",\"v\":1}",
+      "signing_input_utf8": "CSP1|accounts_request|cryptograph.watch|{\"ctr\":2,\"exp\":1782300300,\"iat\":1782300000,\"pairing_id\":\"6BE2A38E-1111-4222-8333-444455556666\",\"type\":\"accounts_request\",\"v\":1}",
+      "signer_public_key": "AtahChR25SdTydNjkrEA4PWe1pyTQZJvHizxXXTejD8R",
+      "signature": "hHE4lPQA-q-Rdn6ikLCY9dvZvyTObD9wgnnjzfA-ownrkAQcomx0YAv6TYp_Avm1DJXL6PF877dbwJLUwYMzqw"
+    },
+    {
+      "type": "revoke",
+      "destination_host": "links.rabby.example",
+      "envelope": {
+        "pairing_id": "6BE2A38E-1111-4222-8333-444455556666",
+        "ctr": 9,
+        "iat": 1782300000,
+        "v": 1,
+        "type": "revoke"
+      },
+      "canonical": "{\"ctr\":9,\"iat\":1782300000,\"pairing_id\":\"6BE2A38E-1111-4222-8333-444455556666\",\"type\":\"revoke\",\"v\":1}",
+      "signing_input_utf8": "CSP1|revoke|links.rabby.example|{\"ctr\":9,\"iat\":1782300000,\"pairing_id\":\"6BE2A38E-1111-4222-8333-444455556666\",\"type\":\"revoke\",\"v\":1}",
+      "signer_public_key": "AtahChR25SdTydNjkrEA4PWe1pyTQZJvHizxXXTejD8R",
+      "signature": "ebIPx0Vsw9tCImVKifZT7OfPth7QNvyXVbJkR6YE__wcsAzR1FpwI-gDSKe8_YMA4vxOnkSjVwg1Jwcm4sBUpA"
+    }
+  ],
+  "hpke": [
+    {
+      "recipient_kem_private_key": "GLhU7W7Mam2CKjTvWrBkjFi-NS3kCvpYnyi0WpjPjHo",
+      "recipient_kem_public_key": "AjgPuKhOziyIMw7Gu9JuxJVLTDHwmhYBgOcZD-Iq6f54",
+      "type": "sign_request",
+      "pairing_id": "6BE2A38E-1111-4222-8333-444455556666",
+      "ctr": 7,
+      "plaintext_utf8": "attack at dawn",
+      "sealed": "BK_eeg3yvKYqg1YLNj0PJBqIpnWAKOYNJWMq2jnx_m3GkLUzJG9qEd9ysc9nJWY8y4brltuGb_rQ5O2dNJYgaX08ZoqLAVPK4P3azCdgNXZpTtst6hiVryJ4qexy9D4"
+    },
+    {
+      "recipient_kem_private_key": "GLhU7W7Mam2CKjTvWrBkjFi-NS3kCvpYnyi0WpjPjHo",
+      "recipient_kem_public_key": "AjgPuKhOziyIMw7Gu9JuxJVLTDHwmhYBgOcZD-Iq6f54",
+      "type": "sign_response",
+      "pairing_id": "6BE2A38E-1111-4222-8333-444455556666",
+      "ctr": 3,
+      "plaintext_utf8": "{\"request_id\":\"R1\",\"result\":{\"signature\":\"0xabc\"}}",
+      "sealed": "BK_eeg3yvKYqg1YLNj0PJBqIpnWAKOYNJWMq2jnx_m3GkLUzJG9qEd9ysc9nJWY8y4brltuGb_rQ5O2dNJYgaX0mMIyPE02P8v2lwSI1YXDVbFXnGTDwxqjL6q5e49pgsSUze_lW79MEDFa0TkrcozTtS6ZZ-qshjoQGNWu6DW5L0Fc"
+    }
+  ],
+  "transcript": {
+    "relay_now": 1782300000,
+    "callback_url": "https://links.rabby.example/cryptograph-callback",
+    "account": "0x5aAeb6053F3E94C9b9A09f33669435E7Ef1BeAed",
+    "pairing_id": "6BE2A38E-1111-4222-8333-444455556666",
+    "peer_signing_private_key": "Tu7AFCVErG7RFVArrC8qfzEw8a9UI0b1ukGypIfQ8RI",
+    "peer_kem_private_key": "6La1cwfaXPUUe5dtXqAlgp_5s1h2ee61KVPJa8tn8J8",
+    "peer_signing_public_key": "AtahChR25SdTydNjkrEA4PWe1pyTQZJvHizxXXTejD8R",
+    "peer_kem_public_key": "A5jBA3TgNft8DT7x3IcPwV4c6VDVvYwlODNmrEGFadls",
+    "cg_signing_private_key": "bHToIequYSZkFiA-uozDk2TuQ6qmwEX-bagaMT324KQ",
+    "cg_kem_private_key": "GLhU7W7Mam2CKjTvWrBkjFi-NS3kCvpYnyi0WpjPjHo",
+    "pair_request_url": "https://cryptograph.watch/pair?req=eyJhcHBfbmFtZSI6IlJhYmJ5IiwiY2IiOiJodHRwczovL2xpbmtzLnJhYmJ5LmV4YW1wbGUvY3J5cHRvZ3JhcGgtY2FsbGJhY2siLCJleHAiOjE3ODIzMDA2MDAsImlhdCI6MTc4MjMwMDAwMCwibm9uY2VfcGVlciI6IlU3RGFMNnBPaTRsTXBCbkhzckRCd3JIZmRKQzNuOEs5Zkw5RDBIenYtSzgiLCJwZWVyX2tlbV9wdWIiOiJBNWpCQTNUZ05mdDhEVDd4M0ljUHdWNGM2VkRWdll3bE9ETm1yRUdGYWRscyIsInBlZXJfc2lnX3B1YiI6IkF0YWhDaFIyNVNkVHlkTmprckVBNFBXZTFweVRRWkp2SGl6eFhYVGVqRDhSIiwidHlwZSI6InBhaXJfcmVxdWVzdCIsInYiOjF9&sig=_lmNwt5HG6HYaW0MJ342fuoT83VwqP8Fi1YsDQV-KgHS42cDeEaXJl7DpeZpRHnC8ra93VKaEQeJLZdjjoKMBQ",
+    "sign_request_url": "https://cryptograph.watch/sign?req=eyJib2R5IjoiQktfZWVnM3l2S1lxZzFZTE5qMFBKQnFJcG5XQUtPWU5KV01xMmpueF9tM0drTFV6Skc5cUVkOXlzYzluSldZOHk0YnJsdHVHYl9yUTVPMmROSllnYVgwbU1KLUpBVmVmN18zWWttUW5JMmZtSEJLcERYS2docHVVMjdWUTI4Rng0UU50SS1zUXJvQVFEMEMzQTI2SmhYQ2hkRFQ1ZFBwak9pQ1FmWDZtNFVZelJNdjRfSFJ1QXRzZmw2bTBVeWZ6OE5ENmp4MFZtbzN2dkxxRFRCMDB1cjlnM3I0RmJHM3V1S0liVEZ0c1RmUFlzU25yWU4waFhKeEhnMFdIYnh4QlFtOXBZZUp1VHJJSlJwbkw5QWdtTkQ0N1NEYndEdjVXTy1aYTVGOUdOYWtob0NKdzNlcU9JbUdkQ2s2S3NfZktIUWQyaWZFMlVGdTc2NGhncTFiLTVZbTVyellsNXhPNnZySE1BSnVHcGIxdWljNlJ6aUVINFB4ZzRYbEdlNEpaQmstOFVULW9aTW1xZ1lfM1E0SXZ1dmUwY2JwVl9FWG81LVd6aEo4dXJZN3dNREdEeGNqTlJOdFNWSy15cEt5Y1Y5Tk9Tem1CNGFfRGZaRGtHMWF0ZUE4cWJ5OXFBcFIySTRSUXBGVllvSVI0aVZyX1piaVBjUldXOFN5RjJJQnZUWkt6VnkzOThOSlZodnhvOU5Kbkp2dlBabVc3b2FyaEtlWDdROHJjbThIZ3dKajVQY3ZIZWk5VldjUEdzMUFHQk9Ldnk5VE9PVjIzWWwxb1F5aUZ4a2h6IiwiY3RyIjoxLCJleHAiOjE3ODIzMDAzMDAsImlhdCI6MTc4MjMwMDAwMCwicGFpcmluZ19pZCI6IjZCRTJBMzhFLTExMTEtNDIyMi04MzMzLTQ0NDQ1NTU1NjY2NiIsInR5cGUiOiJzaWduX3JlcXVlc3QiLCJ2IjoxfQ&sig=tFR4JdfPPW8zjbnphVd7HiRKARH2bOZkieS3hSUl1bV4shZbHNFjrOxmnrKK9ophwTe6gKgmUv2K-6Xv_iMFMw",
+    "sign_request_ctr": 1,
+    "expected_sign_body": {
+      "request_id": "0E1FA0C4-7777-4888-9999-AAAABBBBCCCC",
+      "chain": "eip155:1",
+      "method": "eth_signTransaction"
+    }
+  }
+}

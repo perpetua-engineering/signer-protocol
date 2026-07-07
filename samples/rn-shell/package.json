@@ -1,0 +1,14 @@
+{
+  "name": "cryptograph-signer-rn-shell",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Bare-bones React Native shell validating @perpetua/signer-protocol integration via Linking — the transport pattern an eth-keyring-cryptograph Rabby keyring would use.",
+  "dependencies": {
+    "@perpetua/signer-protocol": "file:../../sdk/signer-protocol",
+    "react": "18.3.1",
+    "react-native": "0.76.5"
+  },
+  "scripts": {
+    "start": "react-native start"
+  }
+}
